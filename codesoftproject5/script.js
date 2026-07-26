@@ -1,12 +1,4 @@
-/* =========================================
-   BLOGSPACE - TASK 5
-   COMPLETE JAVASCRIPT
-========================================= */
 
-
-/* =========================================
-   BLOG DATA
-========================================= */
 
 const articles = {
 
@@ -69,9 +61,7 @@ const articles = {
 };
 
 
-/* =========================================
-   DOM ELEMENTS
-========================================= */
+
 
 const menuBtn = document.getElementById("menuBtn");
 const navLinks = document.getElementById("navLinks");
@@ -129,9 +119,7 @@ const commentsList =
 let selectedCategory = "all";
 
 
-/* =========================================
-   MOBILE MENU
-========================================= */
+
 
 if (menuBtn) {
 
@@ -154,9 +142,7 @@ if (menuBtn) {
 }
 
 
-/* =========================================
-   CLOSE MOBILE MENU
-========================================= */
+
 
 document.querySelectorAll(".nav-links a")
     .forEach(link => {
@@ -172,9 +158,7 @@ document.querySelectorAll(".nav-links a")
     });
 
 
-/* =========================================
-   DARK MODE
-========================================= */
+
 
 const savedTheme =
     localStorage.getItem("blogTheme");
@@ -222,9 +206,7 @@ if (themeBtn) {
 }
 
 
-/* =========================================
-   FILTER ARTICLES
-========================================= */
+
 
 function filterArticles() {
 
@@ -285,9 +267,7 @@ function filterArticles() {
 }
 
 
-/* =========================================
-   SEARCH
-========================================= */
+
 
 if (searchInput) {
 
@@ -299,9 +279,7 @@ if (searchInput) {
 }
 
 
-/* =========================================
-   CATEGORY BUTTONS
-========================================= */
+
 
 categoryButtons.forEach(button => {
 
@@ -325,9 +303,7 @@ categoryButtons.forEach(button => {
 });
 
 
-/* =========================================
-   LOAD MORE
-========================================= */
+
 
 if (loadMoreBtn) {
 
@@ -348,9 +324,7 @@ if (loadMoreBtn) {
 }
 
 
-/* =========================================
-   OPEN ARTICLE MODAL
-========================================= */
+
 
 function openArticle(id) {
 
@@ -393,9 +367,7 @@ function openArticle(id) {
 }
 
 
-/* =========================================
-   OPEN ARTICLE BUTTONS
-========================================= */
+
 
 document.addEventListener("click", event => {
 
@@ -418,9 +390,7 @@ document.addEventListener("click", event => {
 });
 
 
-/* =========================================
-   CLOSE MODAL
-========================================= */
+
 
 function closeArticle() {
 
@@ -443,9 +413,7 @@ modalOverlay.addEventListener(
 );
 
 
-/* =========================================
-   ESC KEY CLOSE MODAL
-========================================= */
+
 
 document.addEventListener(
     "keydown",
@@ -464,9 +432,7 @@ document.addEventListener(
 );
 
 
-/* =========================================
-   RELATED ARTICLES
-========================================= */
+
 
 function loadRelatedArticles(currentId) {
 
@@ -526,9 +492,7 @@ function loadRelatedArticles(currentId) {
 }
 
 
-/* =========================================
-   COMMENTS
-========================================= */
+
 
 function getComments(id) {
 
@@ -599,9 +563,7 @@ function loadComments(id) {
 }
 
 
-/* =========================================
-   ADD COMMENT
-========================================= */
+
 
 if (commentForm) {
 
@@ -664,9 +626,7 @@ if (commentForm) {
 }
 
 
-/* =========================================
-   SECURITY - ESCAPE HTML
-========================================= */
+
 
 function escapeHTML(text) {
 
@@ -681,9 +641,7 @@ function escapeHTML(text) {
 }
 
 
-/* =========================================
-   SOCIAL SHARING
-========================================= */
+
 
 function shareArticle(platform) {
 
@@ -758,9 +716,7 @@ document
     );
 
 
-/* =========================================
-   COPY ARTICLE LINK
-========================================= */
+
 
 document
     .getElementById("copyLink")
@@ -790,9 +746,7 @@ document
     );
 
 
-/* =========================================
-   CURRENT YEAR
-========================================= */
+
 
 document
     .getElementById("currentYear")
@@ -800,9 +754,7 @@ document
     new Date().getFullYear();
 
 
-/* =========================================
-   ACTIVE NAVIGATION
-========================================= */
+
 
 const sections =
     document.querySelectorAll(
@@ -857,9 +809,7 @@ window.addEventListener(
 );
 
 
-/* =========================================
-   PAGE READY
-========================================= */
+
 
 console.log(
     "BlogSpace Task 5 loaded successfully."
