@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="A modern responsive blog website with articles, categories, search and more.">
+
+    <title>BlogSpace | Modern Blog</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+     NAVBAR
+========================================= -->
+
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+            <a href="#" class="logo">
+                <span class="logo-icon">B</span> Blog
+                <span>Space</span>
+            </a>
+
+            <nav class="nav-links" id="navLinks">
+
+                <a href="#home" class="active">
+                Home
+            </a>
+
+                <a href="#articles">
+                Articles
+            </a>
+
+                <a href="#categories">
+                Categories
+            </a>
+
+                <a href="#about">
+                About
+            </a>
+
+            </nav>
+
+            <div class="nav-actions">
+
+                <button class="theme-btn" id="themeBtn" aria-label="Toggle dark mode" title="Toggle dark mode">
+                🌙
+            </button>
+
+                <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+                ☰
+            </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+     HERO SECTION
+========================================= -->
+
+    <main id="home">
+
+        <section class="hero">
+
+            <div class="container hero-container">
+
+                <div class="hero-content">
+
+                    <span class="hero-label">
+                ✦ Welcome to BlogSpace
+            </span>
+
+                    <h1>
+                        Ideas that
+                        <span>inspire.</span> Stories that
+                        <span>matter.</span>
+                    </h1>
+
+                    <p>
+                        Explore useful ideas, technology, lifestyle, travel and creativity through simple and engaging stories.
+                    </p>
+
+                    <a href="#articles" class="primary-btn">
+                Explore Articles →
+            </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+     FEATURED ARTICLE
+========================================= -->
+
+        <section class="featured-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                FEATURED STORY
+            </span>
+
+                    <h2>
+                        Editor's Pick
+                    </h2>
+
+                </div>
+
+
+                <article class="featured-post" data-id="1">
+
+                    <div class="featured-image">
+
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80" alt="Technology workspace">
+
+                    </div>
+
+
+                    <div class="featured-content">
+
+                        <span class="post-category">
+                    Technology
+                </span>
+
+                        <h2>
+                            How Technology Is Changing the Way We Live
+                        </h2>
+
+                        <p>
+                            Discover how modern technology is transforming our daily lives, work, communication and future.
+                        </p>
+
+                        <div class="post-meta">
+                            <span>📅 July 20, 2026</span>
+                            <span>•</span>
+                            <span>5 min read</span>
+                        </div>
+
+                        <button class="read-btn" data-id="1">
+                    Read Full Article →
+                </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+     ARTICLES SECTION
+========================================= -->
+
+        <section class="articles-section" id="articles">
+
+            <div class="container">
+
+                <div class="articles-top">
+
+                    <div class="section-heading">
+
+                        <span class="section-label">
+                    OUR BLOG
+                </span>
+
+                        <h2>
+                            Latest Articles
+                        </h2>
+
+                        <p>
+                            Read our latest stories and discover something new.
+                        </p>
+
+                    </div>
+
+
+                    <!-- SEARCH -->
+
+                    <div class="search-box">
+
+                        <span>🔍</span>
+
+                        <input type="text" id="searchInput" placeholder="Search articles..." autocomplete="off">
+
+                    </div>
+
+                </div>
+
+
+                <!-- CATEGORY FILTER -->
+
+                <div class="categories" id="categories">
+
+                    <button class="category-btn active" data-category="all">
+                All
+            </button>
+
+                    <button class="category-btn" data-category="technology">
+                Technology
+            </button>
+
+                    <button class="category-btn" data-category="lifestyle">
+                Lifestyle
+            </button>
+
+                    <button class="category-btn" data-category="travel">
+                Travel
+            </button>
+
+                    <button class="category-btn" data-category="creativity">
+                Creativity
+            </button>
+
+                </div>
+
+
+                <!-- BLOG GRID -->
+
+                <div class="blog-grid" id="blogGrid">
+
+                    <!-- CARD 1 -->
+
+                    <article class="blog-card" data-category="technology" data-id="2">
+
+                        <div class="card-image">
+
+                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80" alt="Laptop and technology">
+
+                        </div>
+
+                        <div class="card-content">
+
+                            <span class="post-category">
+                        Technology
+                    </span>
+
+                            <h3>
+                                The Future of Web Development
+                            </h3>
+
+                            <p>
+                                Learn about modern web development trends and technologies shaping the internet.
+                            </p>
+
+                            <div class="card-bottom">
+
+                                <span>
+                            July 18, 2026
+                        </span>
+
+                                <button class="card-read-btn" data-id="2">
+                            Read →
+                        </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- CARD 2 -->
+
+                    <article class="blog-card" data-category="lifestyle" data-id="3">
+
+                        <div class="card-image">
+
+                            <img src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?auto=format&fit=crop&w=800&q=80" alt="Healthy lifestyle">
+
+                        </div>
+
+                        <div class="card-content">
+
+                            <span class="post-category">
+                        Lifestyle
+                    </span>
+
+                            <h3>
+                                Simple Habits for a Better Life
+                            </h3>
+
+                            <p>
+                                Small daily habits can make a big difference in your productivity, health and happiness.
+                            </p>
+
+                            <div class="card-bottom">
+
+                                <span>
+                            July 15, 2026
+                        </span>
+
+                                <button class="card-read-btn" data-id="3">
+                            Read →
+                        </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- CARD 3 -->
+
+                    <article class="blog-card" data-category="travel" data-id="4">
+
+                        <div class="card-image">
+
+                            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="Travel destination">
+
+                        </div>
+
+                        <div class="card-content">
+
+                            <span class="post-category">
+                        Travel
+                    </span>
+
+                            <h3>
+                                Why Traveling Changes Your Perspective
+                            </h3>
+
+                            <p>
+                                Traveling allows us to experience new cultures, meet people and see the world differently.
+                            </p>
+
+                            <div class="card-bottom">
+
+                                <span>
+                            July 12, 2026
+                        </span>
+
+                                <button class="card-read-btn" data-id="4">
+                            Read →
+                        </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- CARD 4 -->
+
+                    <article class="blog-card" data-category="creativity" data-id="5">
+
+                        <div class="card-image">
+
+                            <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=800&q=80" alt="Creative workspace">
+
+                        </div>
+
+                        <div class="card-content">
+
+                            <span class="post-category">
+                        Creativity
+                    </span>
+
+                            <h3>
+                                How to Unlock Your Creative Potential
+                            </h3>
+
+                            <p>
+                                Explore practical ways to improve creativity and bring better ideas to life.
+                            </p>
+
+                            <div class="card-bottom">
+
+                                <span>
+                            July 10, 2026
+                        </span>
+
+                                <button class="card-read-btn" data-id="5">
+                            Read →
+                        </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- CARD 5 -->
+
+                    <article class="blog-card extra-card" data-category="technology" data-id="6">
+
+                        <div class="card-image">
+
+                            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80" alt="Cyber security">
+
+                        </div>
+
+                        <div class="card-content">
+
+                            <span class="post-category">
+                        Technology
+                    </span>
+
+                            <h3>
+                                Why Cybersecurity Matters Today
+                            </h3>
+
+                            <p>
+                                Understand the importance of protecting your digital identity and personal information.
+                            </p>
+
+                            <div class="card-bottom">
+
+                                <span>
+                            July 8, 2026
+                        </span>
+
+                                <button class="card-read-btn" data-id="6">
+                            Read →
+                        </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- CARD 6 -->
+
+                    <article class="blog-card extra-card" data-category="lifestyle" data-id="7">
+
+                        <div class="card-image">
+
+                            <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=800&q=80" alt="Productivity desk">
+
+                        </div>
+
+                        <div class="card-content">
+
+                            <span class="post-category">
+                        Lifestyle
+                    </span>
+
+                            <h3>
+                                A Simple Guide to Better Productivity
+                            </h3>
+
+                            <p>
+                                Use simple planning techniques to organize your day and achieve your goals.
+                            </p>
+
+                            <div class="card-bottom">
+
+                                <span>
+                            July 5, 2026
+                        </span>
+
+                                <button class="card-read-btn" data-id="7">
+                            Read →
+                        </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- NO RESULTS -->
+
+                <div class="no-results" id="noResults">
+
+                    <div>🔎</div>
+
+                    <h3>
+                        No articles found
+                    </h3>
+
+                    <p>
+                        Try another search or category.
+                    </p>
+
+                </div>
+
+
+                <!-- LOAD MORE -->
+
+                <div class="load-more-container">
+
+                    <button class="load-more-btn" id="loadMoreBtn">
+                Load More Articles
+            </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+     ABOUT SECTION
+========================================= -->
+
+        <section class="about-section" id="about">
+
+            <div class="container about-container">
+
+                <div>
+
+                    <span class="section-label">
+                ABOUT BLOGSPACE
+            </span>
+
+                    <h2>
+                        Stories made for curious minds.
+                    </h2>
+
+                </div>
+
+                <p>
+                    BlogSpace is a modern blog platform created to share useful ideas, interesting stories and practical knowledge about technology, lifestyle, travel and creativity.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+     FOOTER
+========================================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div>
+
+                <a href="#" class="logo footer-logo">
+                    <span class="logo-icon">B</span> Blog
+                    <span>Space</span>
+                </a>
+
+                <p>
+                    Ideas, stories and inspiration for curious minds.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Quick Links
+                </h4>
+
+                <a href="#home">
+                Home
+            </a>
+
+                <a href="#articles">
+                Articles
+            </a>
+
+                <a href="#about">
+                About
+            </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Follow Us
+                </h4>
+
+                <div class="social-links">
+
+                    <a href="#" aria-label="Facebook">
+                    Facebook
+                </a>
+
+                    <a href="#" aria-label="Instagram">
+                    Instagram
+                </a>
+
+                    <a href="#" aria-label="LinkedIn">
+                    LinkedIn
+                </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            © <span id="currentYear"></span> BlogSpace. All Rights Reserved.
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================================
+     ARTICLE MODAL
+========================================= -->
+
+    <div class="article-modal" id="articleModal">
+
+        <div class="modal-overlay" id="modalOverlay"></div>
+
+
+        <div class="modal-content">
+
+            <button class="close-modal" id="closeModal" aria-label="Close article">
+            ✕
+        </button>
+
+
+            <img id="modalImage" src="" alt="Article image">
+
+
+            <div class="modal-body">
+
+                <span class="post-category" id="modalCategory">
+            </span>
+
+                <h2 id="modalTitle">
+                </h2>
+
+                <div class="modal-date" id="modalDate">
+                </div>
+
+                <p id="modalText">
+                </p>
+
+
+                <!-- SHARE BUTTONS -->
+
+                <div class="share-section">
+
+                    <strong>
+                    Share this article
+                </strong>
+
+                    <div class="share-buttons">
+
+                        <button id="shareFacebook">
+                        Facebook
+                    </button>
+
+                        <button id="shareTwitter">
+                        Twitter
+                    </button>
+
+                        <button id="shareLinkedin">
+                        LinkedIn
+                    </button>
+
+                        <button id="copyLink">
+                        Copy Link
+                    </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- COMMENTS -->
+
+                <div class="comments-section">
+
+                    <h3>
+                        Comments
+                    </h3>
+
+                    <form id="commentForm">
+
+                        <input type="text" id="commentName" placeholder="Your name" required>
+
+                        <textarea id="commentText" placeholder="Write your comment..." required></textarea>
+
+                        <button type="submit">
+                        Post Comment
+                    </button>
+
+                    </form>
+
+
+                    <div id="commentsList">
+
+                    </div>
+
+                </div>
+
+
+                <!-- RELATED ARTICLES -->
+
+                <div class="related-section">
+
+                    <h3>
+                        Related Articles
+                    </h3>
+
+                    <div id="relatedArticles">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
